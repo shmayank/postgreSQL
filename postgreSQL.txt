@@ -1,0 +1,23 @@
+-------------------PostgreSQl Commands-----------------
+
+Show all databases: \l
+
+Create db: create database db_name;
+
+connected to database: \c db_name;
+
+Drop database: DROP database db_name;
+
+Create Table in Postgres: create table table_name(Column1 datatype Primary key not null, column2 datatype......)
+
+Delete tables: Delete table table_name;
+
+Inserting data into table: INSERT into tab values(value1, value2, value3, value4, ....)
+
+Comments :  sIngle line comment --inserting data in table
+            multi line comment /*Select all the columns
+								of all the records
+								in the Customers table:*/
+								
+								
+								
