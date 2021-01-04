@@ -25,14 +25,20 @@ Comments :  sIngle line comment --inserting data in table
 								
 #SQL query to find second highest salary
 
-SELECT
-    MAX(price)
-FROM
-    products
-WHERE
-    price <(
-    SELECT
-        MAX(price)
-    FROM
-        products
-)
+1:-
+SELECT MAX(price) FROM products WHERE price <( SELECT MAX(price) FROM products )
+
+2:-
+SELECT price FROM products ORDER BY price DESC LIMIT 2, 1
+
+
+------------------------------------------
+#SQL query to find third highest salary
+
+1:-
+SELECT MAX(price) FROM products WHERE price <( SELECT MAX(price) FROM products WHERE price <( SELECT MAX(price) FROM products ) )
+
+2:-
+SELECT price FROM products ORDER BY price DESC LIMIT 2, 1
+
+-------------------------------------
