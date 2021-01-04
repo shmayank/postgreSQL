@@ -32,7 +32,7 @@ SELECT MAX(price) FROM products WHERE price <( SELECT MAX(price) FROM products )
 SELECT price FROM products ORDER BY price DESC LIMIT 2, 1
 
 
-------------------------------------------
+---------------------------------------------------
 #SQL query to find third highest salary
 
 1:-
@@ -41,4 +41,11 @@ SELECT MAX(price) FROM products WHERE price <( SELECT MAX(price) FROM products W
 2:-
 SELECT price FROM products ORDER BY price DESC LIMIT 2, 1
 
--------------------------------------
+-----------------------------------------------------------
+
+-------------------------------------------------
+# SQL query to print the name from the 5th letter
+
+SELECT SUBSTR(p_name, 5) from products
+
+---------------------------------------------------
